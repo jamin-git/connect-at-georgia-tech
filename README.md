@@ -11,7 +11,7 @@ Connect is a website developed by the Georgia Tech Web Development Club in the F
 ## Members (Sign Name Here)
 
 #### Project Manager - Jacob Amin
-#### Developers - Joshua Samuel
+#### Developers - Joshua Samuel, Emily Cai, Stanley Wong
 
 <br>
 

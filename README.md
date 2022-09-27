@@ -10,8 +10,8 @@ Connect is a website developed by the Georgia Tech Web Development Club in the F
 
 ## Members (Sign Name Here)
 
-Project Manager - Jacob Amin
-Developers ... 
+#### Project Manager - Jacob Amin
+#### Developers - ... 
 
 ### Frameworks Used
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)

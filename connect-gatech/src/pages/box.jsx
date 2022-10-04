@@ -5,20 +5,21 @@ const Box = dynamic(() => import('@/components/canvas/Box'), {
   ssr: false,
 })
 
+const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
+  ssr: true,
+})
+
 // Step 5 - delete Instructions components
 const Page = (props) => {
   return (
     <>
       <Instructions />
+      <LCanvas>
+        <Box/>
+      </LCanvas>
     </>
   )
 }
-
-Page.r3f = (props) => (
-  <>
-    <Box route='/' />
-  </>
-)
 
 export default Page
 

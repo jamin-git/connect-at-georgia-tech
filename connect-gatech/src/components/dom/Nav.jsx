@@ -5,13 +5,13 @@ import { useRouter } from 'next/router'
 
 function Nav() {
     const router = useRouter()
-    return <>
-        <a onClick={ () => router.push("/") } style={{cursor: "pointer"}}>Go to Home </a>
-        <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}>Go to App </a>
+    return <div style={{display: "block", fontSize: "2rem"}}>
+        <a onClick={ () => router.push("/") } style={{cursor: "pointer"}}>Go to Home | </a>
+        <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}>Go to App | </a>
 
         {/* Still need to add the page for this! */}
         <a onClick={ () => router.push("/about") } style={{cursor: "pointer"}}>Go To About</a>
-    </>
+    </div>
 }
 
 export default Nav;

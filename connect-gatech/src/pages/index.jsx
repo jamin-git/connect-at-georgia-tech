@@ -6,15 +6,16 @@ const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
 })
 
 
-// This is the Homepage - Jacob
+// This is the Homepage! Here is where the react components will be loaded in - Jacob
 const Page = (props) => {
   return (
-    <>
+    <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: "100vh", width: "100vw"}}>
       <Nav />
-    </>
+    </div>
   )
 }
 
+// You must export the page so it can actually be used!
 export default Page
 
 

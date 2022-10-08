@@ -1,38 +1,28 @@
 import dynamic from 'next/dynamic'
-// Step 5 - delete Instructions components
-import Instructions from '@/components/dom/Instructions'
-// import Shader from '@/components/canvas/Shader/Shader'
-
-// Dynamic import is used to prevent a payload when the website start that will include threejs r3f etc..
-// WARNING ! errors might get obfuscated by using dynamic import.
-// If something goes wrong go back to a static import to show the error.
-// https://github.com/pmndrs/react-three-next/issues/49
-const Shader = dynamic(() => import('@/components/canvas/Shader/Shader'), {
-  ssr: false,
-})
+import Nav from '../components/dom/Nav'
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
   ssr: true,
 })
 
-// dom components goes here
+
+// This is the Homepage - Jacob
 const Page = (props) => {
   return (
     <>
-      <Instructions />
-      <LCanvas>
-        <Shader/>
-      </LCanvas>
+      <Nav />
     </>
   )
 }
 
 export default Page
 
+
+// This is the title of the page in browser!
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Index',
+      title: 'Home',
     },
   }
 }

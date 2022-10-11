@@ -1,39 +1,52 @@
 import dynamic from 'next/dynamic'
-// Step 5 - delete Instructions components
-import Instructions from '@/components/dom/Instructions'
-// import Shader from '@/components/canvas/Shader/Shader'
+import Nav from '../components/dom/Nav'
+import { useRouter } from 'next/router'
 
-// Dynamic import is used to prevent a payload when the website start that will include threejs r3f etc..
-// WARNING ! errors might get obfuscated by using dynamic import.
-// If something goes wrong go back to a static import to show the error.
-// https://github.com/pmndrs/react-three-next/issues/49
-const Shader = dynamic(() => import('@/components/canvas/Shader/Shader'), {
-  ssr: false,
+const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
+  ssr: true,
 })
 
-// dom components goes here
+
+// This is the Homepage! Here is where the react components will be loaded in - Jacob
 const Page = (props) => {
+  const router = useRouter()
   return (
-    <>
-      <Instructions />
-    </>
+      <div style={{color: "#CDD8FF", backgroundColor: "#030B26", height: "100vh", fontSize: "4rem", display: "block"}}>
+          <div style={{display: "flex", width: "50%"}}>
+              <p style = {{paddingLeft: "4%", fontSize: "2.5rem"}}><b>connect.</b></p>
+          </div>
+          <div style={{justifyContent: "flex-end", display: "flex", marginTop: "-3%",  marginRight: "3%"}}>
+              <button style={{backgroundColor: "#CDD8FF", border: "none", padding: "1.5%", 
+              display: "inline-block", borderRadius: "50%"}}></button>
+          </div>
+          <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.6rem",  marginTop: "1%",  marginRight: "3%"}}>
+              <a onClick={ () => router.push("/about") } style={{cursor: "pointer"}}>about</a>
+          </div>
+          <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.6rem",  marginTop: "0%", marginRight: "3%"}}>
+              <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}>explore</a>
+          </div>
+          <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "6%"}}>
+              <b><i>EXPLORE GEORGIA TECH</i></b>
+          </div>
+          <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+              <b><i>LIKE NEVER BEFORE</i></b>
+          </div>
+          <div style={{display: "flex", justifyContent: "center", backgroundColor: "blue", borderRadius: "100%", height: "100vh", width: "90vw", margin: "auto", marginTop: "4%"}}> 
+              <button></button>
+          </div>
+      </div>
   )
 }
 
-// canvas components goes here
-// It will receive same props as Page component (from getStaticProps, etc.)
-Page.r3f = (props) => (
-  <>
-    <Shader />
-  </>
-)
-
+// You must export the page so it can actually be used!
 export default Page
 
+
+// This is the title of the page in browser!
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Index',
+      title: 'Home',
     },
   }
 }

@@ -19,7 +19,7 @@ const BoxComponent = ({ route }) => {
     <>
       <mesh
         ref={mesh}
-        onClick={() => router.push(route)}
+        onClick={() => router.push("/")}
         onPointerOver={() => setHover(true)}
         onPointerOut={() => setHover(false)}
         scale={hovered ? 1.1 : 1}

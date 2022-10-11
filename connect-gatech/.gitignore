@@ -34,7 +34,7 @@ yarn-error.log*
 /public/sw.js
 
 # prefer yarn than npm
-package-lock.json
+yarn.lock
 
 report.*.json
 

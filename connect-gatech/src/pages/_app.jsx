@@ -14,7 +14,6 @@ function App({ Component, pageProps = { title: 'index' } }) {
       <Dom>
         <Component {...pageProps} />
       </Dom>
-      {Component?.r3f && <LCanvas>{Component.r3f(pageProps)}</LCanvas>}
     </>
   )
 }

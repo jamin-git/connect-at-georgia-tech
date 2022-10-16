@@ -8,7 +8,7 @@ const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
 
 
 // This is the Homepage! Here is where the react components will be loaded in - Jacob
-const Page = (props) => {
+function Home(props) {
   const router = useRouter()
   return (
       <div style={{color: "#CDD8FF", backgroundColor: "#030B26", height: "100vh", fontSize: "4rem", display: "block"}}>
@@ -39,7 +39,7 @@ const Page = (props) => {
 }
 
 // You must export the page so it can actually be used!
-export default Page
+export default Home
 
 
 // This is the title of the page in browser!

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 //import styles from '../styles/about.module.css'
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function About() {
+function About(props) {
   const router = useRouter()
   return (
     // create buttons to navigate to other pages
@@ -20,7 +20,7 @@ function About() {
       </div>
 
       <div style={{ justifyContent: "flex-end", display: "flex", marginTop: "0.5%", marginRight: "1.6%", fontSize: "1.5rem" }}>
-        <p onClick={() => router.push("/home")} style={{ cursor: "pointer", paddingRight: "15px" }}> home </p>
+        <p onClick={() => router.push("/")} style={{ cursor: "pointer", paddingRight: "15px" }}> home </p>
       </div>
       <div style={{ justifyContent: "flex-end", display: "flex", fontSize: "1.5rem" }}>
         <p onClick={() => router.push("/app")} style={{ cursor: "pointer", paddingRight: "15px" }}> explore </p>
@@ -46,7 +46,7 @@ function About() {
           </div>
         </h1>
       </div>
-    </div >
+    </div>
   )
 
 }

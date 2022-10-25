@@ -8,15 +8,17 @@ import { Environment, OrbitControls } from '@react-three/drei'
 // import random from 'random-esm'
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
-  ssr: true,
+  ssr: true
 })
 
-const Globe = dynamic(() => import('@/components/canvas/Globe'))
+const Globe = dynamic(() => import('@/components/canvas/Globe'));
+
 
 
 // This is the Homepage! Here is where the react components will be loaded in - Jacob
 function Home(props) {
   const router = useRouter()
+
   return (
       <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "180vh", fontSize: "5rem", display: "block"}}>
         {/* <Stars/> */}
@@ -35,13 +37,14 @@ function Home(props) {
               <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}><b><i>explore</i></b></a>
           </div>
 
+          
+
           <div style={{paddingLeft: "20%"}}>
-            <LCanvas>
+            <LCanvas enableZoom={false}>
             <Suspense fallback={null}>
               <Globe/>
                 <Environment preset="sunset" />
             </Suspense>
-            <OrbitControls />
           </LCanvas>
           </div>
 

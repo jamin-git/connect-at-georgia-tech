@@ -1,11 +1,15 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload } from '@react-three/drei'
 import useStore from '@/helpers/store'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-const LControl = () => {
+const LControl = props => {
   const dom = useStore((state) => state.dom)
   const control = useRef(null)
+
+  useEffect(() => {
+    console.log(props);
+  }, [props]);
 
   useEffect(() => {
     if (control.current) {
@@ -19,9 +23,9 @@ const LControl = () => {
     }
   }, [dom, control])
   // @ts-ignore
-  return <OrbitControls ref={control} domElement={dom.current} />
+  return <OrbitControls ref={control} domElement={dom.current} enableZoom={props.enableZoom}/>
 }
-const LCanvas = ({ children }) => {
+const LCanvas = (props) => {
   const dom = useStore((state) => state.dom)
 
   return (
@@ -34,9 +38,9 @@ const LCanvas = ({ children }) => {
       }}
       onCreated={(state) => state.events.connect(dom.current)}
     >
-      <LControl />
+      <LControl enableZoom={props.enableZoom}/>
       <Preload all />
-      {children}
+      {props.children}
     </Canvas>
   )
 }

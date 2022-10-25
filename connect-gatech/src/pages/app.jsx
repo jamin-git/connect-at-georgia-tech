@@ -22,7 +22,7 @@ const Nav = dynamic(() => import('@/components/dom/Nav'), {
 const Box = dynamic(() => import('@/components/canvas/Box'))
 
 // This is the App Page
-const Page = (props) => {
+function App(props) {
   return (
     <>
     {/* Nav bar is not working properly here */}
@@ -43,7 +43,7 @@ const Page = (props) => {
   )
 }
 
-export default Page
+export default App
 
 export async function getStaticProps() {
   return {

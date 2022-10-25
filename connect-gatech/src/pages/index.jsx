@@ -15,7 +15,7 @@ const Globe = dynamic(() => import('@/components/canvas/Globe'))
 
 
 // This is the Homepage! Here is where the react components will be loaded in - Jacob
-const Page = (props) => {
+function Home(props) {
   const router = useRouter()
   return (
       <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "180vh", fontSize: "5rem", display: "block"}}>
@@ -82,7 +82,7 @@ const Page = (props) => {
 // }
 
 // You must export the page so it can actually be used!
-export default Page
+export default Home
 
 
 // This is the title of the page in browser!

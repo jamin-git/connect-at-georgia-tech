@@ -1,0 +1,23 @@
+.nav-connect {
+    display: flex;
+    width: 50%;
+    padding-left: 2%;
+    padding-top:1.5%;
+    font-size: 1.8rem;
+}
+
+.nav-explore {
+    justify-content: flex-end;
+    display: flex;
+    font-size: 1.6rem;
+    margin-top: -3%;
+    margin-right: 3%;
+}
+
+.nav-about {
+    justify-content: flex-end;
+    display: flex;
+    font-size: 1.6rem;
+    margin-top: 1%;
+    margin-right: 3%;
+}

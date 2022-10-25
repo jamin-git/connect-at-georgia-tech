@@ -16,6 +16,7 @@ function Map(props) {
     const { nodes, materials } = useGLTF("/models/GTMap.gltf");
   return (
     <group {...props} dispose={null}>
+      
       <mesh
         castShadow
         receiveShadow

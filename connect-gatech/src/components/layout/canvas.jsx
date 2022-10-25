@@ -29,7 +29,8 @@ const LCanvas = ({ children }) => {
       mode='concurrent'
       style={{
         position: 'absolute',
-        top: 0,
+        height: "70%",
+        top: 150,
       }}
       onCreated={(state) => state.events.connect(dom.current)}
     >

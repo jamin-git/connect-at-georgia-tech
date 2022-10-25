@@ -1,17 +1,30 @@
 import { useFrame } from '@react-three/fiber'
 import { useRouter } from 'next/router'
+// import './Nav.module.css';
 
 // Very Very basic nav / router component - Jacob
 
 function Nav() {
     const router = useRouter()
-    return <div style={{display: "block", fontSize: "2rem"}}>
-        <a onClick={ () => router.push("/") } style={{cursor: "pointer"}}>Go to Home | </a>
-        <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}>Go to App | </a>
+    return <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "100vh"}}>
+          <div style={{display: "flex", width: "50%", paddingLeft: "2%", paddingTop:"1.5%", fontSize: "1.8rem"}}>
+              <a onClick={ () => router.push("/") } style={{cursor: "pointer"}}><b><i>connect.</i></b></a>
+          </div>
 
-        {/* Still need to add the page for this! */}
-        <a onClick={ () => router.push("/about") } style={{cursor: "pointer"}}>Go To About</a>
+          <div style={{justifyContent: "flex-end", display: "flex",  marginTop: "-3%", marginRight: "3%"}}>
+              <button style={{backgroundColor: "#CDD8FF", border: "none", padding: "1.5%", 
+              display: "inline-block", borderRadius: "50%"}}></button>
+          </div>
+
+          <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.4rem",  marginTop: "2%",  marginRight: "3%"}}>
+              <a onClick={ () => router.push("/about") } style={{cursor: "pointer"}}><b><i>about</i></b></a>
+          </div>
+          
+          <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.4rem",  marginTop: "0%", marginRight: "3%"}}>
+              <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}><b><i>explore</i></b></a>
+          </div>
     </div>
 }
+
 
 export default Nav;

@@ -31,8 +31,8 @@ const Page = (props) => {
       <div >
         <LCanvas>
           <Suspense fallback={null}>
-            <Box/>
-              {/* <Map scale={.01} /> */}
+            {/* <Box/> */}
+              <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>
           <OrbitControls />

@@ -17,15 +17,6 @@ function Map(props) {
   return (
     <group {...props} dispose={null}>
       
-      <div>
-          <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.6rem",  marginTop: "1%",  marginRight: "3%"}}>
-              <a onClick={ () => router.push("/about") } style={{cursor: "pointer"}}>about</a>
-          </div>
-          <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.6rem",  marginTop: "0%", marginRight: "3%"}}>
-              <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}>explore</a>
-          </div>
-      </div>
-
       <mesh
         castShadow
         receiveShadow

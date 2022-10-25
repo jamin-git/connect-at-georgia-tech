@@ -1,5 +1,9 @@
 import { useFrame } from '@react-three/fiber'
+import { info } from 'autoprefixer';
 import { useRouter } from 'next/router'
+import { NotEqualDepth } from 'three';
+import Info from "./Info";
+import infos from "../infos";
 //import styles from '../styles/about.module.css'
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -27,21 +31,19 @@ function About(props) {
       </div>
       <div className="not-italic mt-2 tracking-wide text-center text-4xl font-bold">About
         <h1 className="italic tracking-wide text-4xl text-center text-4xl font-bold">Connect! @ Georgia Tech
-          <div className="not-italic text-3xl pt-6">
+          <div className="not-italic text-5xl pt-6">
             Meet the Team!
-            <div className="text-2xl pt-4 ml-2">
-              <ul class="columns" data-columns="2">
-                <li>Jacob</li>
-                <li>Hayden</li>
-                <li>Michelle</li>
-                <li>Emily</li>
-                <li>Stanley</li>
-                <li>Josh</li>
-                <li>Jackie</li>
-                <li>Yeoram</li>
-                <li>Ruby</li>
-                <img src="" alt="" />
-              </ul>
+            <div style={{ display: "block" }}>
+              <div style={{ display: "block" }} class="text-2xl">
+                {infos.map(infoItem => (
+                  <Info
+                    key={infoItem.key}
+                    name={infoItem.name}
+                    year={infoItem.year}
+                    major={infoItem.major}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </h1>

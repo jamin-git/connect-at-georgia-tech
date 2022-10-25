@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import GlobeComponent from '@/components/canvas/Globe'
 import { Suspense } from 'react'
 import { Environment, OrbitControls } from '@react-three/drei'
+// import { Points, PointMaterial } from '@react-three/drei'
+// import random from 'random-esm'
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
   ssr: true,
@@ -16,7 +18,8 @@ const Globe = dynamic(() => import('@/components/canvas/Globe'))
 const Page = (props) => {
   const router = useRouter()
   return (
-      <div style={{color: "#CDD8FF", backgroundColor: "#030B26", height: "180vh", fontSize: "5rem", display: "block"}}>
+      <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "180vh", fontSize: "5rem", display: "block"}}>
+        {/* <Stars/> */}
         {/* <Nav></Nav> */}
           <div style={{display: "flex", width: "50%"}}>
               <p style = {{paddingLeft: "4%", fontSize: "1.8rem", marginTop: "3%"}}><b><i>connect.</i></b></p>
@@ -61,6 +64,22 @@ const Page = (props) => {
       </div>
   )
 }
+
+// function Stars(props) {
+//   const ref = useRef()
+//   // const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }))
+//   useFrame((state, delta) => {
+//     ref.current.rotation.x -= delta / 10
+//     ref.current.rotation.y -= delta / 15
+//   })
+//   return (
+//     <group rotation={[0, 0, Math.PI / 4]}>
+//       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
+//         <PointMaterial transparent color="#ffa0e0" size={0.005} sizeAttenuation={true} depthWrite={false} />
+//       </Points>
+//     </group>
+//   )
+// }
 
 // You must export the page so it can actually be used!
 export default Page

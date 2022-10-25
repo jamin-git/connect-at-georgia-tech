@@ -61,9 +61,18 @@ const GlobeComponent = ({ route }) => {
         onPointerOut={() => setHover(false)}
         // scale={hovered ? 1.1 : 1}
       >
-        <sphereBufferGeometry args={[1, 64, 64]} />
+        <sphereBufferGeometry args={[1.8, 64, 64]} />
         <AnimatedMaterial color={color} envMapIntensity={env} clearcoat={coat} clearcoatRoughness={0} metalness={0.1} />
       </a.mesh>
+      <ContactShadows
+          rotation={[Math.PI / 2, 0, 0]}
+          position={[0, -1.6, 0]}
+          opacity={mode ? 0.8 : 0.4}
+          width={15}
+          height={15}
+          blur={2.5}
+          far={1.6}
+        />
       <directionalLight position={[5, 5, 5]} />
       <ambientLight />
     </>

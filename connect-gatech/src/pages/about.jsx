@@ -10,11 +10,7 @@ const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
 const Page = (props) => {
   const router = useRouter()
   return (
-    <div style={{color: "#CDD8FF", backgroundColor: "#030B26", height: "100vh", fontSize: "4rem", display: "block"}}>
-          <div style={{display: "flex", width: "50%"}}>
-              <p style = {{paddingLeft: "4%", fontSize: "2.5rem"}}><b>connect.</b></p>
-          </div>
-      </div>
+    <Nav/>
   )
 }
 

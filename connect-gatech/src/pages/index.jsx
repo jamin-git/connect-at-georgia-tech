@@ -22,8 +22,8 @@ function Home(props) {
   return (
       <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "180vh", fontSize: "5rem", display: "block"}}>
         {/* <Stars/> */}
-        {/* <Nav></Nav> */}
-          <div style={{display: "flex", width: "50%"}}>
+        <Nav></Nav>
+          {/* <div style={{display: "flex", width: "50%"}} className="z-10">
               <p style = {{paddingLeft: "4%", fontSize: "1.8rem", marginTop: "3%"}}><b><i>connect.</i></b></p>
           </div>
           <div style={{justifyContent: "flex-end", display: "flex", marginTop: "-3%",  marginRight: "3%"}}>
@@ -35,11 +35,10 @@ function Home(props) {
           </div>
           <div style={{justifyContent: "flex-end", display: "flex", fontSize: "1.4rem",  marginTop: "0%", marginRight: "3%"}}>
               <a onClick={ () => router.push("/app") } style={{cursor: "pointer"}}><b><i>explore</i></b></a>
-          </div>
+          </div> */}
 
-          
 
-          <div style={{paddingLeft: "20%"}}>
+          <div style={{paddingLeft: "20%"}} className="z-10">
             <LCanvas enableZoom={false}>
             <Suspense fallback={null}>
               <Globe/>
@@ -47,19 +46,18 @@ function Home(props) {
             </Suspense>
           </LCanvas>
           </div>
-
-          <div style={{display: "flex",paddingLeft: "15%", marginTop: "3%"}}>
-              <b><i>EXPLORE</i></b>
-          </div>
-          <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>
-              <b><i>GEORGIA  TECH</i></b>
-          </div>
-          <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>
-              <b><i>LIKE  NEVER</i></b>
-          </div>
-          <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>
-              <b><i>BEFORE</i></b>
-          </div>
+            <div style={{display: "flex",paddingLeft: "15%", marginTop: "3%"}}>
+                <b><i>EXPLORE</i></b>
+            </div>
+            <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>
+                <b><i>GEORGIA  TECH</i></b>
+            </div>
+            <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>
+                <b><i>LIKE  NEVER</i></b>
+            </div>
+            <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>
+                <b><i>BEFORE</i></b>
+            </div>
           {/* <div style={{display: "flex", justifyContent: "center", backgroundColor: "blue", borderRadius: "100%", height: "100vh", width: "90vw", margin: "auto", marginTop: "4%"}}> 
               <button></button>
           </div> */}

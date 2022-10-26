@@ -4,7 +4,7 @@
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { Environment, OrbitControls } from '@react-three/drei'
-// import Nav from '../components/dom/Nav'
+import Nav from "../components/dom/Nav";
 
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
@@ -15,10 +15,6 @@ const Map = dynamic(() => import('@/components/canvas/Map'), {
   ssr: false,
 })
 
-const Nav = dynamic(() => import('@/components/dom/Nav'), {
-    ssr: false,
-  })
-
 const Box = dynamic(() => import('@/components/canvas/Box'))
 
 // This is the App Page
@@ -26,9 +22,9 @@ function App(props) {
   return (
     <>
     {/* Nav bar is not working properly here */}
-    <div>
+    <div className="h-screen" style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)"}}>
       <Nav/>
-      <div >
+      <div>
         <LCanvas>
           <Suspense fallback={null}>
             {/* <Box/> */}

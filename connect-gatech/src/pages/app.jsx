@@ -15,6 +15,10 @@ const Map = dynamic(() => import('@/components/canvas/Map'), {
   ssr: false,
 })
 
+const Marker = dynamic(() => import('@/components/canvas/Marker'), {
+  ssr: false,
+})
+
 const Box = dynamic(() => import('@/components/canvas/Box'))
 
 // This is the App Page
@@ -28,6 +32,7 @@ function App(props) {
         <LCanvas>
           <Suspense fallback={null}>
             {/* <Box/> */}
+              {/* <Marker scale={0.5}/> */}
               <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>

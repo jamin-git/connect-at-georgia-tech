@@ -5,6 +5,10 @@ import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { Environment, OrbitControls } from '@react-three/drei'
 import Nav from "../components/dom/Nav";
+import React from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import Swal from 'sweetalert2'
 
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
@@ -21,6 +25,16 @@ const Marker = dynamic(() => import('@/components/canvas/Marker'), {
 
 const Box = dynamic(() => import('@/components/canvas/Box'))
 
+function setTrigger(isClicked) {
+
+  Swal.fire({
+    title: 'Culc',
+    text: 'This is the main study building on campus',
+    icon: 'error',
+    confirmButtonText: 'Cool'
+  })
+}
+
 // This is the App Page
 function App(props) {
   return (
@@ -32,7 +46,7 @@ function App(props) {
         <LCanvas>
           <Suspense fallback={null}>
             {/* <Box/> */}
-              {/* <Marker scale={0.5}/> */}
+              <Marker scale={1} position={[0.7, 0.3, 0.6]} onClick={(e) => setTrigger()}/>
               <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>

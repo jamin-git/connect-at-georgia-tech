@@ -20,8 +20,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "@react-three/drei": "^9.32.3",
     "@react-three/fiber": "^8.8.4",
+    "@zeit/next-css": "^1.0.1",
     "eslint": "^7.32.0",
     "glsl-random": "^0.0.5",
     "next": "^12.3.0",

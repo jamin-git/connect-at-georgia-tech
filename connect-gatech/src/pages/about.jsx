@@ -1,35 +1,45 @@
-import { useFrame } from '@react-three/fiber'
-import { info } from 'autoprefixer';
-import { useRouter } from 'next/router'
-import { NotEqualDepth } from 'three';
-import Info from "./Info";
-import infos from "../infos";
+// import { useFrame } from '@react-three/fiber'
+// import { info } from 'autoprefixer';
+// import { useRouter } from 'next/router'
+// import { NotEqualDepth } from 'three';
+// import Info from "./Info";
+// import infos from "../infos";
+import Nav from '../components/dom/Nav'
+
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
+import { Environment, OrbitControls, OrthographicCamera } from '@react-three/drei'
+
+
+const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
+  ssr: true,
+})
+
+const Ufo = dynamic(() => import('@/components/canvas/Ufo'), {
+  ssr: false,
+})
+
 //import styles from '../styles/about.module.css'
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function About(props) {
-  const router = useRouter()
   return (
     // create buttons to navigate to other pages
-    <div style={{ "font-weight": "bold", "height": "100vh", "backgroundColor": "#030B26", "color": "#cdd8ff" }}>
-      <div class="ml-2 tracking-wide text-4xl pt-6">connect.</div>
-      <div style={{ marginRight: "3.6%", "color": "#cdd8ff" }}>
+    <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "180vh", fontSize: "5rem", display: "block"}}>
+      <Nav className="z-10"/>
+
+      <div>
+        <LCanvas enableZoom={false}>
+        <OrthographicCamera makeDefault zoom={1} />
+          <Suspense fallback={null}>
+              <Ufo scale={1.0}/>
+              <Environment preset="sunset" />
+          </Suspense>
+          <OrbitControls />
+        </LCanvas>
       </div>
 
-      <div style={{ justifyContent: "flex-end", display: "flex", marginTop: "-3%", marginRight: "3%" }}>
-        <button style={{
-          backgroundColor: "#CDD8FF", border: "none", padding: "1.75%",
-          display: "inline-block", borderRadius: "50%"
-        }}></button>
-      </div>
-
-      <div style={{ justifyContent: "flex-end", display: "flex", marginTop: "0.5%", marginRight: "1.6%", fontSize: "1.5rem" }}>
-        <p onClick={() => router.push("/")} style={{ cursor: "pointer", paddingRight: "15px" }}> home </p>
-      </div>
-      <div style={{ justifyContent: "flex-end", display: "flex", fontSize: "1.5rem" }}>
-        <p onClick={() => router.push("/app")} style={{ cursor: "pointer", paddingRight: "15px" }}> explore </p>
-      </div>
-      <div className="not-italic mt-2 tracking-wide text-center text-4xl font-bold">About
+      {/* <div className="not-italic mt-2 tracking-wide text-center text-4xl font-bold">About
         <h1 className="italic tracking-wide text-4xl text-center text-4xl font-bold">Connect! @ Georgia Tech
           <div className="not-italic text-5xl pt-6">
             Meet the Team!
@@ -47,10 +57,18 @@ function About(props) {
             </div>
           </div>
         </h1>
-      </div>
+      </div> */}
     </div>
   )
 
 }
 
-export default About;
+export default About
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'About',
+    },
+  }
+}

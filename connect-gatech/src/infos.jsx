@@ -8,7 +8,7 @@ const infos = [
     {
         key: 2,
         name: "Michelle Lee",
-        year: "Year: 4th",
+        year: "Year: 3rd",
         major: "Major: Computer Science"
     },
     {

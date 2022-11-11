@@ -15,13 +15,10 @@ const Map = dynamic(() => import('@/components/canvas/Map'), {
   ssr: false,
 })
 
-const Box = dynamic(() => import('@/components/canvas/Box'))
-
 // This is the App Page
 function App(props) {
   return (
     <>
-    {/* Nav bar is not working properly here */}
     <div className="h-screen" style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)"}}>
       <Nav/>
       <div>

@@ -5,13 +5,14 @@ import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { Environment, OrbitControls } from '@react-three/drei'
 import Nav from "../components/dom/Nav";
-import Testmodal from "../components/dom/Testmodal";
+import InfoModal from "../components/dom/InfoModal";
 import React from 'react';
-// import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 import Swal from 'sweetalert2'
-// import { Fancybox } from "@fancyapps/ui";
-// import "fancyapps/ui/dist/fancybox.css";
+import { Fancybox } from "@fancyapps/ui";
+
+
+// Importing Data
+import buildingInfo from "../database/buildingInfo"
 
 
 
@@ -36,26 +37,41 @@ function setTrigger(isClicked) {
     icon: 'error',
     confirmButtonText: 'Cool'
   })
+}
 
-  function setTrigger2() {
-    Fancybox.show([{ 
-      src: ("<Testmodal />"),
-      type: "inline" }]);
-  }
+// This will trigger the pop up modal. the "id" parameter is the id tag that you associate with the modal
+function setTrigger2(id) {
+  Fancybox.show([{ 
+    src:  id,
+    type: "clone" }]);
 }
 
 // This is the App Page
 function App(props) {
   return (
     <>
+
+    {/* You must place modals here! (So they won't display on the page) Additionally, you must have a corresponding id tag for each modal. */}
+    <div style={{display: "none"}}>
+      {buildingInfo.map(buildingItem => (
+        <div id={buildingItem.id}>
+          <InfoModal
+            key={buildingItem.key}
+            title={buildingItem.title}
+            desc={buildingItem.desc} />
+        </div>
+      ))}
+    </div>
+
+
     {/* Nav bar is not working properly here */}
     <div className="h-screen" style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)"}}>
-      <Nav/>
+      <div style={{zIndex: 10, position: "relative"}}><Nav/></div>
       <div>
         <LCanvas>
           <Suspense fallback={null}>
             {/* <Box/> */}
-              <Marker scale={1} position={[0.7, 0.3, 0.6]} onClick={(e) => setTrigger()}/>
+              <Marker scale={1} position={[0.7, 0.3, 0.6]} onClick={(e) => setTrigger2("#culc")}/>
               <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>

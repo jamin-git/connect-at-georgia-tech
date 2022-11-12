@@ -72,6 +72,7 @@ function App(props) {
           <Suspense fallback={null}>
             {/* <Box/> */}
               <Marker scale={1} position={[0.7, 0.3, 0.6]} onClick={(e) => setTrigger2("#culc")}/>
+              <Marker scale={1} position={[0, 0, 0]} onClick={(e) => setTrigger2("#techgreen")}/>
               <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>

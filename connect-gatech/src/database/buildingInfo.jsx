@@ -5,6 +5,12 @@ const buildingInfo = [
         title: "Clough Undergraduate Learning Commons",
         desc: "This is the culc building. There are microwaves and it is a great spot to study, although it is very popular among students.",
     },
+    {
+        key: 2,
+        id: "techgreen",
+        title: "Tech Green",
+        desc: "This is tech green!",
+    }
 
 ];
 

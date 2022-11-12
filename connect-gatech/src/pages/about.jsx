@@ -2,8 +2,8 @@ import { useFrame } from '@react-three/fiber'
 import { info } from 'autoprefixer';
 import { useRouter } from 'next/router'
 import { NotEqualDepth } from 'three';
-import Info from "./Info";
-import infos from "../infos";
+import Info from "../components/dom/Info";
+import infos from "../database/infos";
 //import styles from '../styles/about.module.css'
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

@@ -1,3 +1,12 @@
+
+// Jacob Added for CSS from node_modules
+const withCSS = require('@zeit/next-css')
+module.exports = withCSS({
+  cssLoaderOptions: {
+    url: false
+  }
+})
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })

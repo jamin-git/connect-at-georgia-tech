@@ -1,0 +1,11 @@
+.div {
+    width: "80vw";
+    height: "80vh";
+    background: "red";
+}
+.title {
+    color: red;
+}
+.desc {
+    color: blue;
+}

@@ -1,24 +1,9 @@
-// import { useFrame } from '@react-three/fiber'
-// import { info } from 'autoprefixer';
-// import { useRouter } from 'next/router'
-// import { NotEqualDepth } from 'three';
-// import Info from "./Info";
-// import infos from "../infos";
-import Nav from '../components/dom/Nav'
-
-import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
-import { Environment, OrbitControls, OrthographicCamera } from '@react-three/drei'
-
-
-const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
-  ssr: true,
-})
-
-const Ufo = dynamic(() => import('@/components/canvas/Ufo'), {
-  ssr: false,
-})
-
+import { useFrame } from '@react-three/fiber'
+import { info } from 'autoprefixer';
+import { useRouter } from 'next/router'
+import { NotEqualDepth } from 'three';
+import Info from "../components/dom/Info";
+import infos from "../database/infos";
 //import styles from '../styles/about.module.css'
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

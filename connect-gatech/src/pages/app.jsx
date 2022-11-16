@@ -73,6 +73,7 @@ function App(props) {
             {/* <Box/> */}
               <Marker scale={1} position={[0.7, 0.3, 0.6]} onClick={(e) => setTrigger2("#culc")}/>
               <Marker scale={1} position={[0, 0, 0]} onClick={(e) => setTrigger2("#techgreen")}/>
+              <Marker scale={1} position={[-6.677, 0.3, -1.174]} onClick={(e) => setTrigger2("#crc")}/>
               <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>

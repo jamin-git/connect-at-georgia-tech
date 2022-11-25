@@ -10,6 +10,12 @@ const buildingInfo = [
         id: "techgreen",
         title: "Tech Green",
         desc: "This is tech green!",
+    },
+    {
+        key: 3,
+        id: "crc",
+        title: "Campus Recreation Center",
+        desc: "This is the CRC! You can play sports like basketball, volleyball, soccer, badminton, fencing, or just exercise. You can also rent sports equipment here.",
     }
 
 ];

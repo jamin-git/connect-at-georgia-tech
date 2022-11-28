@@ -49,7 +49,7 @@ const GlobeComponent = ({ route }) => {
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <>
-      <PerspectiveCamera makeDefault position={[0, 0, 4]} fov={75}>
+      <PerspectiveCamera makeDefault position={[0, 0, 4]} fov={90}>
         <a.ambientLight intensity={ambient} />
         <a.pointLight ref={light} position-z={-15} intensity={env} color="#F8C069" />
       </PerspectiveCamera>

@@ -22,7 +22,7 @@ function Home(props) {
   return (
       <div style={{color: "#CDD8FF", background: "linear-gradient(30deg, #CBC3E3, #030B26)", height: "180vh", fontSize: "5rem", display: "block"}}>
         {/* <Stars/> */}
-        <Nav></Nav>
+        <div style={{zIndex: 10, position: "relative"}}><Nav/></div>
           {/* <div style={{display: "flex", width: "50%"}} className="z-10">
               <p style = {{paddingLeft: "4%", fontSize: "1.8rem", marginTop: "3%"}}><b><i>connect.</i></b></p>
           </div>
@@ -38,7 +38,7 @@ function Home(props) {
           </div> */}
 
 
-          <div style={{paddingLeft: "20%"}} className="z-10">
+          <div style={{paddingLeft: "25%", zIndex: 10}}>
             <LCanvas enableZoom={false}>
             <Suspense fallback={null}>
               <Globe/>

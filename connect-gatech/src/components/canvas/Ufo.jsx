@@ -1,10 +1,17 @@
 import React, { useRef } from "react";
+import { useFrame } from '@react-three/fiber'
 import { useGLTF } from "@react-three/drei";
+import * as THREE from 'three'
 
 export function Ufo(props) {
   const { nodes, materials } = useGLTF("models/ufo.gltf");
+  const ufoMesh = useRef();
+  useFrame(({clock }) => {
+    ufoMesh.current.position.y = ((Math.sin(clock.getElapsedTime())) * 5) - 20 ;
+  })
+  
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0, -20, 0]} ref={ufoMesh}>
       <mesh
         castShadow
         receiveShadow

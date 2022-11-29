@@ -31,7 +31,7 @@ const buildingInfo = [
         id: "klaus",
         title: "Klaus Advanced Computing Building",
         desc: "The building is home to the College of Computing's School of Computer Science and its School of Computational Science and Engineering, three research centers (GTISC, CERCS and ARC), and over 20 College of Computing Research Labs. It also houses much of the School of Electrical Engineering's computer engineering faculty and support staff. The binary bridge links this building to the College of Computing Building.",
-        micowave: "This building has two microwaves. One in the breakroom on the second and third floors near the giant stairs",
+        microwave: "This building has two microwaves. One in the breakroom on the second and third floors near the giant stairs",
         buzzcard: "Requires buzzcard access after 6pm",
         vending: "Has a vending machine on the first floor",
     },

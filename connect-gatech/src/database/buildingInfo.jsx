@@ -44,35 +44,33 @@ const buildingInfo = [
         buzzcard: "Requires buzzcard access after 6pm",
         vending: "N/A",
     },
-    {
-        key: 6,
-        id: "crosland",
-        title: "Crosland Tower",
-        desc: "This is part of the Georgia Tech's main library. It is connected to Price Gilbert and contains quiet study area unlike Gilbert library.",
-        microwave: "N/A",
-        buzzcard: "Requires buzzcard access after 6pm",
-        vending: "Has a vending machine on the second, third and sixth floor",
-    },
+      {
+    key: 6,
+    id: "crosland",
+    title: "Crosland Tower",
+    desc: "This is part of the Georgia Tech's main library. It is connected to Price Gilbert and contains quiet study area unlike Gilbert library.",
+    buzzcard: "Requires buzzcard access after 6pm",
+    vending: "Has a vending machine on the second, third and sixth floor",
+  },
+  
+  {
+    key: 7,
+    id: "sc",
+    title: "John Lewis Student Center",
+    desc: "The Student Center houses 11 dining concepts as well as a post office, bowling alley, two theaters, 8 meeting spaces, study spaces, and the Student Organization Hub.",			
+    micowave: "This building has a microwave on the 2nd floor near Blue Donkey",
+    buzzcard: "Requires buzzcard access after 11pm",
+    food: "First floor food options include Chick-Fil-A, Panda Express, and There Burger Bar. Second floor food options include Blue Donkey, Tech it To Go, Campus Crust, Gryo Chef Mediterranean, Brain Freeze, Bento Sushi, 5th District Deli, and Test Kitchen.",
+    vending: "Has vending machines on each floor",
+  },
+  {
+    key: 8,
+    id: "stamps",
+    title: "Stamps Health Services",
+    desc: "Stamps Health Center is the on-campus outpatient ambulatory care center that provides health care and education to students.",
+    vending: "Has vending machines",
+   },
 
-    {
-      key: 7,
-      id: "studentcenter",
-      title: "Georgia Tech Student Center",
-      desc: "This building houses 11 dining concepts, including some returning favorites and new options. The third floor of the building houses several new spaces for student programming, such as the Reflection Space, Grad Student Lounge, and Multicultural Lounge. Additionally, the building boasts several meeting spaces and two theaters that support student events, admissions tours, and more.",
-      microwave: "N/A",
-      buzzcard: "Closed after 11pm",
-      vending: "N/A",
-    },
-
-    {
-      key: 8,
-      id: "stamps",
-      title: "Stamps Health Services",
-      desc: " This building provides multi-dimensional health care both to individuals and the Georgia Tech community. You can make an appoinment and submit immunizations forms on their website. They also have vaccine and flu shot clinics.",
-      microwave: "N/A",
-      buzzcard: "Does not require buzzcard access and is open from 8am - 5pm on the weekdays",
-      vending: "N/A",
-    },
 
     {
       key: 9,
@@ -93,8 +91,6 @@ const buildingInfo = [
     buzzcard: "Requires buzzcard access after 6pm",
     vending: "N/A",
   },
-
-    
 
 ];
 

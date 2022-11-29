@@ -127,6 +127,26 @@ const buildingInfo = [
     vending: "On the ground floor",
     imgurl: "https://tinyurl.com/5n8w24bx",
   },
+  {
+    key: 13,
+    id: "brittain",
+    title: "Brittain Dining Hall",
+    desc: "Brittain Dining Hall is one of three dining halls at Georgia Tech. It is located on east part of campus and known for its Gothic architecture which is rare at GT. But they have the least food options out of all dining halls.",
+    microwave: "N/A",
+    buzzcard: "Requires buzzcard access at all times. Building opens from 7:00AM to 10PM on weekdays only.",
+    vending: "N/A",
+    imgurl: "https://tinyurl.com/2p8a4c72",
+  },
+  {
+    key: 14,
+    id: "nav",
+    title: "North Ave Dining Hall",
+    desc: "North Ave Dining Hall, a.k.a. Nav, is located on the easternmost part of campus. It is not really spacious, so on weekends and nights, seats are mostly taken.",
+    microwave: "N/A",
+    buzzcard: "Requires buzzcard access at all times. Building opens from 7:00AM to 10:PM on weekdays and 9:00AM to 9:00PM during weekends.",
+    vending: "N/A",
+    imgurl: "https://tinyurl.com/3x7pu8bs",
+  }
 
 ];
 

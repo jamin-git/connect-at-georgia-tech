@@ -3,6 +3,8 @@ import { useGLTF } from "@react-three/drei";
 
 function Marker(props) {
   const { nodes, materials } = useGLTF("/models/Location_Marker.gltf");
+
+  
   return (
     <group {...props} dispose={null}>
       <mesh

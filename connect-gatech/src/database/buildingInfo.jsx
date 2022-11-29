@@ -28,7 +28,23 @@ const buildingInfo = [
         micowave: "This building has two microwaves. One in the breakroom on the second and third floors near the giant stairs",
         buzzcard: "Requires buzzcard access after 6pm",
         vending: "Has a vending machine on the first floor",
-    }
+    },
+  {
+    key: 5,
+    id: "gilbert",
+    title: "Price Gilbert Memorial Library",
+    desc: "This is the main library of Georgia Tech. This is connected to Crosland Tower and the Clough Undergraduate Learning Commons, and is the main studying space for students.",
+    buzzcard: "Requires buzzcard access after 6pm",
+  },
+  {
+    key: 6,
+    id: "crosland",
+    title: "Crosland Tower",
+    desc: "This is part of the Georgia Tech's main library. It is connected to Price Gilbert and contains quiet study area unlike Gilbert library.",
+    buzzcard: "Requires buzzcard access after 6pm",
+    vending: "Has a vending machine on the second, third and sixth floor",
+  }
+    
 
 ];
 

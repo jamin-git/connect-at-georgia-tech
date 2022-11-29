@@ -82,6 +82,7 @@ const buildingInfo = [
       imgurl: "https://tinyurl.com/4r3zkfx9",
     },
 
+
     {
       key: 9,
       id: "skiles",
@@ -126,8 +127,6 @@ const buildingInfo = [
     vending: "On the ground floor",
     imgurl: "https://tinyurl.com/5n8w24bx",
   },
-
-    
 
 ];
 

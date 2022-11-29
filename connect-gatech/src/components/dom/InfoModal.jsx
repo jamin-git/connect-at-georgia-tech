@@ -15,25 +15,25 @@ function InfoModal(props) {
             <Row>
                 {/* Left Side */}
                 <Col>
-                    <Row style={{height: "25vh"}}>
+                    <Row style={{height: "30vh"}}>
                         <div>
                             <h1 className={sheet.subheading}>Description</h1>
                             <p> {props.desc} </p>
                         </div>
                     </Row>
-                    <Row style={{height: "10vh"}}>
+                    <Row style={{height: "12vh"}}>
                         <div>
                             <h1 className={sheet.subheading}>Buzzcard Access</h1>
                             <p> {props.buzzcard} </p>
                         </div>
                     </Row>
-                    <Row style={{height: "10vh"}}>
+                    <Row style={{height: "12vh"}}>
                         <div>
                             <h1 className={sheet.subheading}>Vending Machine</h1>
                             <p>{props.vending}</p>
                         </div>
                     </Row>
-                    <Row style={{height: "10vh"}}>
+                    <Row style={{height: "12vh"}}>
                         <div>
                             <h1 className={sheet.subheading}>Microwaves</h1>
                             <p>{props.microwave}</p>
@@ -42,7 +42,7 @@ function InfoModal(props) {
                 </Col>
                 {/* Right Side */}
                 <Col className={sheet.imgcontainer}>
-                    <img src="https://http.cat/202" className={sheet.img}></img>
+                    <img src="https://tinyurl.com/msbfw2pd" className={sheet.img}></img>
                 </Col>
             </Row>
         </Container>

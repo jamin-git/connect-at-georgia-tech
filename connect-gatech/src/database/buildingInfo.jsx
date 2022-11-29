@@ -56,12 +56,12 @@ const buildingInfo = [
 
     {
       key: 7,
-      id: "student center",
-      title: "Student Center",
-      desc: "",
+      id: "studentcenter",
+      title: "Georgia Tech Student Center",
+      desc: "This building houses 11 dining concepts, including some returning favorites and new options. The third floor of the building houses several new spaces for student programming, such as the Reflection Space, Grad Student Lounge, and Multicultural Lounge. Additionally, the building boasts several meeting spaces and two theaters that support student events, admissions tours, and more.",
       microwave: "N/A",
-      buzzcard: "Requires buzzcard access after 6pm",
-      vending: "",
+      buzzcard: "Closed after 11pm",
+      vending: "N/A",
     },
 
     {
@@ -88,7 +88,7 @@ const buildingInfo = [
     key: 10,
     id: "vanleer",
     title: "Van Leer Building",
-    desc: "ECE administrative offices, classrooms, instructional and research labs (VIPs), and offices are located here. It is connected to the Interdisciplinary Design Commons which is a 15,000-square-foot, state-of-the-art makerspace—the largest of its kind in the nation—that caters specifically to electronics and computer engineering design and innovation. However, students of all majors can use the IDC, which like other makerspaces on campus offers them a hands-on learning environment where they can work together to solve technology design challenges.",
+    desc: "ECE administrative offices, classrooms, instructional and research labs (VIPs), and offices are located here. It is connected to the Interdisciplinary Design Commons which is a 15,000-square-foot, state-of-the-art makerspace—the largest of its kind in the nation—that caters specifically to electronics and computer engineering design and innovation. However, students of all majors can use the IDC, which like other makerspaces on campus offers them a hands-on learning environment.",
     microwave: "This building has a microwave on the fifth floor but is intended for emag research",
     buzzcard: "Requires buzzcard access after 6pm",
     vending: "N/A",

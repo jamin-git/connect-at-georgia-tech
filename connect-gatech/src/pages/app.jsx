@@ -59,7 +59,7 @@ function App(props) {
             key={buildingItem.key}
             title={buildingItem.title}
             desc={buildingItem.desc}
-            micowave={buildingItem.micowave} 
+            microwave={buildingItem.microwave} 
             buzzcard={buildingItem.buzzcard}
             vending={buildingItem.vending}
             />

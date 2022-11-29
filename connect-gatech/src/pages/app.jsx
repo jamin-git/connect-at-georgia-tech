@@ -58,7 +58,12 @@ function App(props) {
           <InfoModal
             key={buildingItem.key}
             title={buildingItem.title}
-            desc={buildingItem.desc} />
+            desc={buildingItem.desc}
+            microwave={buildingItem.microwave} 
+            buzzcard={buildingItem.buzzcard}
+            vending={buildingItem.vending}
+            imgurl={buildingItem.imgurl}
+            />
         </div>
       ))}
     </div>
@@ -72,8 +77,14 @@ function App(props) {
           <Suspense fallback={null}>
             {/* <Box/> */}
               <Marker scale={1} position={[0.7, 0.3, 0.6]} onClick={(e) => setTrigger2("#culc")}/>
-              <Marker scale={1} position={[0, 0, 0]} onClick={(e) => setTrigger2("#techgreen")}/>
+              <Marker scale={1} position={[-0.1, 0.2, 0.4]} onClick={(e) => setTrigger2("#techgreen")}/>
               <Marker scale={1} position={[-6.677, 0.3, -1.174]} onClick={(e) => setTrigger2("#crc")}/>
+              <Marker scale={1} position={[1, 0.3, -2.3]} onClick={(e) => setTrigger2("#klaus")}/>
+              <Marker scale={1} position={[-1.5, 0.3, 1]} onClick={(e) => setTrigger2("#studentcenter")}/>
+              <Marker scale={1} position={[-5.3, 0.3, 0.3]} onClick={(e) => setTrigger2("#stamps")}/>
+              <Marker scale={1} position={[0.7, 0.3, 1.6]} onClick={(e) => setTrigger2("#skiles")}/>
+              <Marker scale={1} position={[0.1, 0.2, -1]} onClick={(e) => setTrigger2("#vanleer")}/>
+              <Marker scale={1} position={[-1.3, 0.3, -2.7]} onClick={(e) => setTrigger2("#howey")}/>
               <Marker scale={1} position={[1.9, 0.3, 1]} onClick={(e) => setTrigger2("#crosland")}/>
               <Marker scale={1} position={[1.4, 0.3, 0.7]} onClick={(e) => setTrigger2("#gilbert")}/>
               <Marker scale={1} position={[5.5, 0.3, 2.8]} onClick={(e) => setTrigger2("#brittain")}/>

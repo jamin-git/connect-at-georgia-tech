@@ -30,7 +30,7 @@ function Nav() {
         <p className='text-3xl font-bold p-6 italic'>connect.</p>
       </a>
       <div className='flex flex-col items-end m-6 gap-1 italic font-bold text-xl'>
-        <img src='https://i.imgur.com/4rDdRBN.png' width='60' height='60'></img>
+        <img src='https://i.imgur.com/tSlnFIW.png' width='60' height='60'></img>
         <a onClick={() => router.push('/about')} className='cursor-pointer'>
           <p className='pt-2'>about</p>
         </a>

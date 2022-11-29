@@ -42,7 +42,7 @@ function InfoModal(props) {
                 </Col>
                 {/* Right Side */}
                 <Col className={sheet.imgcontainer}>
-                    <img src="https://tinyurl.com/msbfw2pd" className={sheet.img}></img>
+                    <img src={props.imgurl} className={sheet.img}></img>
                 </Col>
             </Row>
         </Container>

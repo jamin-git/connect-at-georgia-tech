@@ -7,6 +7,7 @@ const buildingInfo = [
         microwave: "This building has a microwave in Room 284: Second floor CULC, requires Buzzcard access (possibly faculty only), locked after hours",
         buzzcard: "Requires buzzcard access after 6pm",
         vending: "Has a vending machine on every floor",
+        imgurl: "https://http.cat/202",
     },
     {
         key: 2,
@@ -16,6 +17,7 @@ const buildingInfo = [
         microwave: "N/A",
         buzzcard: "N/A",
         vending: "N/A",
+        imgurl: "https://tinyurl.com/2nzphmxj",
     },
     {
         key: 3,
@@ -24,7 +26,8 @@ const buildingInfo = [
         desc: "This is the CRC! You can play sports like basketball, volleyball, soccer, badminton, fencing, or just exercise. You can also rent sports equipment here.",
         microwave: "N/A",
         buzzcard: "Requires buzzcard to enter the gym",
-        vending: "Has a vending machine on the first floor near the cafe"
+        vending: "Has a vending machine on the first floor near the cafe",
+        imgurl: "https://tinyurl.com/2s4yjpvt",
     }, 
     {
         key: 4,
@@ -34,6 +37,7 @@ const buildingInfo = [
         microwave: "This building has two microwaves. One in the breakroom on the second and third floors near the giant stairs",
         buzzcard: "Requires buzzcard access after 6pm",
         vending: "Has a vending machine on the first floor",
+        imgurl: "https://tinyurl.com/yfyba9xx",
     },
     {
         key: 5,
@@ -69,9 +73,40 @@ const buildingInfo = [
     title: "Stamps Health Services",
     desc: "Stamps Health Center is the on-campus outpatient ambulatory care center that provides health care and education to students.",
     vending: "Has vending machines",
-   },
+    imgurl: "https://tinyurl.com/3tadushm",
+    },
+    {
+        key: 6,
+        id: "crosland",
+        title: "Crosland Tower",
+        desc: "This is part of the Georgia Tech's main library. It is connected to Price Gilbert and contains quiet study area unlike Gilbert library.",
+        microwave: "N/A",
+        buzzcard: "Requires buzzcard access after 6pm",
+        vending: "Has a vending machine on the second, third and sixth floor",
+        imgurl: "https://tinyurl.com/yx25nn8f",
+    },
 
+    {
+      key: 7,
+      id: "studentcenter",
+      title: "Georgia Tech Student Center",
+      desc: "This building houses 11 dining concepts, including some returning favorites and new options. The third floor of the building houses several new spaces for student programming, such as the Reflection Space, Grad Student Lounge, and Multicultural Lounge. Additionally, the building boasts several meeting spaces and two theaters that support student events, admissions tours, and more.",
+      microwave: "N/A",
+      buzzcard: "Closed after 11pm",
+      vending: "N/A",
+      imgurl: "https://i.imgur.com/iwDNOjg.jpg",
+    },
 
+    {
+      key: 8,
+      id: "stamps",
+      title: "Stamps Health Services",
+      desc: " This building provides multi-dimensional health care both to individuals and the Georgia Tech community. You can make an appoinment and submit immunizations forms on their website. They also have vaccine and flu shot clinics.",
+      microwave: "N/A",
+      buzzcard: "Does not require buzzcard access and is open from 8am - 5pm on the weekdays",
+      vending: "N/A",
+      imgurl: "https://tinyurl.com/4r3zkfx9",
+    },
     {
       key: 9,
       id: "skiles",
@@ -80,6 +115,8 @@ const buildingInfo = [
       microwave: "N/A",
       buzzcard: "Does not require buzzcard access but is locked after 8pm",
       vending: "not sure...",
+      imgurl: "https://tinyurl.com/yc54ct6d",
+
    },
 
    {
@@ -90,6 +127,30 @@ const buildingInfo = [
     microwave: "This building has a microwave on the fifth floor but is intended for emag research",
     buzzcard: "Requires buzzcard access after 6pm",
     vending: "N/A",
+
+    imgurl: "https://tinyurl.com/y5xjbev6",
+  },
+
+  {
+    key: 11,
+    id: "howey",
+    title: "Howey Physics Building",
+    desc: "This building is comprised of 26,000 sq. ft. of instructional space (classrooms and laboratories), 156,000 sq. ft. of research laboratory space, and office space for faculty, post-doctoral fellows, graduate students and visitors. The School currently has 44 faculty members, over 225 undergraduate students, and 130 graduate students.",
+    microwave: "N/A",
+    buzzcard: "Closes after 8pm",
+    vending: "N/A",
+    imgurl: "https://tinyurl.com/msbfw2pd",
+  },
+
+  {
+    key: 12,
+    id: "willage",
+    title: "West Village",
+    desc: "West Village hosts the dining commons and pulsing music annex, all with lush outdoor green spaces. With an emphasis on sustainability and community, West Village is the place where students, faculty, and staff. The Dining Commons offers a fresh, food-forward approach in a community-centered area similar to a food hall. There are five micro-restaurants with innovative cuisine ranging from the rich Italian food in Olive to the vast flavors of the world at Spice Trail.",
+    microwave: "N/A",
+    buzzcard: "Requires buzzcard access and is open from 7am - 7pm on the weekend and 9am - 7pm on the weekend",
+    vending: "On the ground floor",
+    imgurl: "https://tinyurl.com/5n8w24bx",
   },
   {
     key: 13,

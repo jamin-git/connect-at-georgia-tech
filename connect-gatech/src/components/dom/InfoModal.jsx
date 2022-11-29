@@ -15,34 +15,34 @@ function InfoModal(props) {
             <Row>
                 {/* Left Side */}
                 <Col>
-                    <Row style={{height: "15vh"}}>
+                    <Row style={{height: "30vh"}}>
                         <div>
-                            <h1 className={sheet.subheading}>General Occupancy</h1>
-                            <p>High</p>
+                            <h1 className={sheet.subheading}>Description</h1>
+                            <p> {props.desc} </p>
                         </div>
                     </Row>
-                    <Row style={{height: "15vh"}}>
-                        <div>
-                            <h1 className={sheet.subheading}>Club Meetings</h1>
-                            <p>All of them</p>
-                        </div>
-                    </Row>
-                    <Row style={{height: "15vh"}}>
-                        <div>
-                            <h1 className={sheet.subheading}>Available Food</h1>
-                            <p>Vending Machines</p>
-                        </div>
-                    </Row>
-                    <Row style={{height: "15vh"}}>
+                    <Row style={{height: "12vh"}}>
                         <div>
                             <h1 className={sheet.subheading}>Buzzcard Access</h1>
-                            <p>Available</p>
+                            <p> {props.buzzcard} </p>
+                        </div>
+                    </Row>
+                    <Row style={{height: "12vh"}}>
+                        <div>
+                            <h1 className={sheet.subheading}>Vending Machine</h1>
+                            <p>{props.vending}</p>
+                        </div>
+                    </Row>
+                    <Row style={{height: "12vh"}}>
+                        <div>
+                            <h1 className={sheet.subheading}>Microwaves</h1>
+                            <p>{props.microwave}</p>
                         </div>
                     </Row>
                 </Col>
                 {/* Right Side */}
                 <Col className={sheet.imgcontainer}>
-                    <img src="https://http.cat/202" className={sheet.img}></img>
+                    <img src={props.imgurl} className={sheet.img}></img>
                 </Col>
             </Row>
         </Container>

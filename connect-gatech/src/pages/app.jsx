@@ -62,6 +62,7 @@ function App(props) {
             microwave={buildingItem.microwave} 
             buzzcard={buildingItem.buzzcard}
             vending={buildingItem.vending}
+            imgurl={buildingItem.imgurl}
             />
         </div>
       ))}
@@ -82,7 +83,8 @@ function App(props) {
               <Marker scale={1} position={[-1.5, 0.3, 1]} onClick={(e) => setTrigger2("#studentcenter")}/>
               <Marker scale={1} position={[-5.3, 0.3, 0.3]} onClick={(e) => setTrigger2("#stamps")}/>
               <Marker scale={1} position={[0.7, 0.3, 1.6]} onClick={(e) => setTrigger2("#skiles")}/>
-              <Marker scale={1} position={[0.1, 0.2,-1]} onClick={(e) => setTrigger2("#vanleer")}/>
+              <Marker scale={1} position={[0.1, 0.2, -1]} onClick={(e) => setTrigger2("#vanleer")}/>
+              <Marker scale={1} position={[-1.3, 0.3, -2.7]} onClick={(e) => setTrigger2("#howey")}/>
               <Map scale={.01} />
               <Environment preset="sunset" />
           </Suspense>

@@ -3,6 +3,7 @@ import Dom from '@/components/layout/dom'
 import '@/styles/index.css'
 import dynamic from 'next/dynamic'
 import "@fancyapps/ui/dist/fancybox.css";
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
   ssr: true,

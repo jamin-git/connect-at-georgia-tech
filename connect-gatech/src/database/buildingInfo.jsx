@@ -43,8 +43,26 @@ const buildingInfo = [
     desc: "This is part of the Georgia Tech's main library. It is connected to Price Gilbert and contains quiet study area unlike Gilbert library.",
     buzzcard: "Requires buzzcard access after 6pm",
     vending: "Has a vending machine on the second, third and sixth floor",
-  }
-    
+  },
+  
+  {
+    key: 7,
+    id: "sc",
+    title: "John Lewis Student Center",
+    desc: "The Student Center houses 11 dining concepts as well as a post office, bowling alley, two theaters, 8 meeting spaces, study spaces, and the Student Organization Hub.",			
+    micowave: "This building has a microwave on the 2nd floor near Blue Donkey",
+    buzzcard: "Requires buzzcard access after 11pm",
+    food: "First floor food options include Chick-Fil-A, Panda Express, and There Burger Bar. Second floor food options include Blue Donkey, Tech it To Go, Campus Crust, Gryo Chef Mediterranean, Brain Freeze, Bento Sushi, 5th District Deli, and Test Kitchen.",
+    vending: "Has vending machines on each floor",
+  },
+  {
+    key: 8,
+    id: "stamps",
+    title: "Stamps Health Services",
+    desc: "Stamps Health Center is the on-campus outpatient ambulatory care center that provides health care and education to students.",
+    vending: "Has vending machines",
+   }
+
 
 ];
 

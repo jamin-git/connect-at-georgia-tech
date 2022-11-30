@@ -23,7 +23,7 @@ const LControl = props => {
     }
   }, [dom, control])
   // @ts-ignore
-  return <OrbitControls ref={control} domElement={dom.current} enableZoom={props.enableZoom}/>
+  return <OrbitControls ref={control} domElement={dom.current} enableZoom={props.enableZoom} maxPolarAngle={Math.PI/2 - 0.1}/>
 }
 const LCanvas = (props) => {
   const dom = useStore((state) => state.dom)

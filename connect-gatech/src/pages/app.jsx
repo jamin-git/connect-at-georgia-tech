@@ -88,7 +88,7 @@ function App(props) {
               <Marker scale={1} position={[1.9, 0.3, 1]} onClick={(e) => setTrigger2("#crosland")}/>
               <Marker scale={1} position={[1.4, 0.3, 0.7]} onClick={(e) => setTrigger2("#gilbert")}/>
               <Marker scale={1} position={[5.5, 0.3, 2.8]} onClick={(e) => setTrigger2("#brittain")}/>
-              <Marker scale={1} position={[-7.5, 0.3, -4.5]} onClick={(e) => setTrigger2("#williage")}/>
+              <Marker scale={1} position={[-7.5, 0.3, -4.5]} onClick={(e) => setTrigger2("#willage")}/>
               <Marker scale={1} position={[5.8, 0.3, 5]} onClick={(e) => setTrigger2("#nav")}/>
               <Map scale={.01} />
               <Environment preset="sunset" />

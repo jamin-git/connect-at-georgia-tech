@@ -29,7 +29,7 @@ function Nav1() {
       <a onClick={() => router.push('/')} className='cursor-pointer'>
         <p className='text-3xl font-bold p-6 italic'>connect.</p>
       </a>
-      <div style= {{color: "#030B26", marginTop: "11%", marginRight: "2%" }} class="italic text-6xl font-bold">Meet the Team</div>
+      <div style= {{color: "#030B26", marginTop: "7%", marginRight: "2%" }} class="italic text-6xl font-bold">Meet the Team</div>
       <div className='flex flex-col items-end m-6 gap-1 italic font-bold text-xl'>
         <img src='https://i.imgur.com/4rDdRBN.png' width='60' height='60'></img>
         <a onClick={() => router.push('/about')} className='cursor-pointer'>

@@ -47,7 +47,7 @@ function About() {
       <div style={{ zIndex: 10, position: "relative" }}>
         {/* <div className="not-italic mt-2 tracking-wide text-center text-4xl font-bold z-10">About
         <h1 className="italic tracking-wide text-4xl text-center text-4xl font-bold">Connect! @ Georgia Tech */}
-        <div style={{ fontFamily: "Bitter", marginLeft: "46%", position: "absolute", textAlign: "center", justifyContent: "center", marginTop: "12%" }} class="text-black col-start-5 col-end-6 font-bold text-center text-8xl m-7">gt://</div>
+        <div style={{ fontFamily: "Bitter", marginLeft: "44%", position: "absolute", textAlign: "center", justifyContent: "center", marginTop: "12%" }} class="text-black col-start-5 col-end-6 font-bold text-center text-8xl m-7">gt://</div>
         <div style={{ display: "block" }} class="text-3xl text-center text-gray-900">
           <div style={{ color: "#CDD8FF" }} class="grid grid-rows-9 grid-cols-14 grid-flow-col gap-3 text-center mt-10 italic">
             <div class="col-start-1 col-end-4 font-bold">Jacob Amin</div>
@@ -65,7 +65,7 @@ function About() {
             <div class="col-start-7 col-end-10 font-bold">Hayden Carpenter</div>
             <h1 class="col-start-7 col-end-10 text-2xl"> 1st year Computer Science major</h1>
             <div class="col-start-7 col-end-10 font-bold">Josh Samuel</div>
-            <h1 class="col-start-7 col-end-10 text-2xl"> d year Computer Science major</h1>
+            <h1 class="col-start-7 col-end-10 text-2xl"> 2nd year Computer Science major</h1>
             <div class="col-start-7 col-end-10 font-bold">Tianrun Wu</div>
             <h1 class="col-start-7 col-end-10 text-2xl"> 3rd year Architecture major</h1>
 

@@ -46,7 +46,7 @@ function Home(props) {
             </Suspense>
           </LCanvas>
           </div>
-            <div style={{display: "flex",paddingLeft: "15%", marginTop: "3%"}}>
+            <div style={{display: "flex",paddingLeft: "15%", marginTop: "-1%"}}>
                 <b><i>EXPLORE</i></b>
             </div>
             <div style={{display: "flex",paddingLeft: "15%", alignItems: "center"}}>

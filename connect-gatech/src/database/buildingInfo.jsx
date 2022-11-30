@@ -110,7 +110,7 @@ const buildingInfo = [
     key: 11,
     id: "howey",
     title: "Howey Physics Building",
-    desc: "This building is comprised of 26,000 sq. ft. of instructional space (classrooms and laboratories), 156,000 sq. ft. of research laboratory space, and office space for faculty, post-doctoral fellows, graduate students and visitors. The School currently has 44 faculty members, over 225 undergraduate students, and 130 graduate students.",
+    desc: "This building is comprised of 26,000 sq. ft. of instructional space (classrooms and laboratories), 156,000 sq. ft. of research laboratory space, and office space for faculty, post-doctoral fellows, graduate students and visitors. The School currently has 44 faculty members, over 225 undergraduate students, and 130 graduate students. This is where the Web Dev meetings are!!",
     microwave: "N/A",
     buzzcard: "Closes after 8pm",
     vending: "N/A",
